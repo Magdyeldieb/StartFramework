@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --whiteColor: #FFF;
+    --secondColor: #2c3e50;
+    --primaryColor: #1abc9c;
+    --footerColor: #1A252F;
+    --bs-nav-link-padding-x: 1.5rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a {
+    text-transform: inherit;
+    color: inherit;
+}
+p{
+    margin-bottom: 0;
+}
+/* Common section */
+section{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line{
+    width: 90px;
+    height: 4px;
+    display: inline-block;
+    background-color: var(--whiteColor);
+}
+.home,.about,.overlay{
+    background-color: var(--primaryColor);
+}
+.section-header{
+    color: var(--secondColor);
+}
+.section-header .line{
+    background-color: var(--secondColor);
+}
+/* End Common Section */
+nav,.upper-footer {
+    background-color: var(--secondColor);
+}
+.upper-footer {
+    padding: 40px 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    --bs-navbar-nav-link-padding-x: .8rem;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+.navbar-brand, .navbar-nav .nav-link{
+    font-weight: 700;
+}
+.navbar-brand,.navbar-brand:focus, .navbar-brand:hover,.navbar-nav .nav-link,
+.navbar-nav .nav-link.show,.nav-link:focus,.active {
+    color: var(--whiteColor);
+}
+.nav-link:focus,.active{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+footer li{
+    width: 35px;
+    height: 35px;
+}
+.copyright {
+    background-color: var(--footerColor);
+}

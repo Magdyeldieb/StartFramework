@@ -1,0 +1,12 @@
+.overlay{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.8s, opacity 0.8s;
+}
+.style-card{
+    cursor: pointer;
+}
+.style-card:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
